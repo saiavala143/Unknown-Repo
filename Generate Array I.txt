@@ -1,0 +1,8 @@
+n=int(input())
+lst=list(map(int,input().split()))
+lst1=[]
+for i in range(0,n,2):
+    ele=lst[i]
+    count=lst[i+1]
+    lst1.extend([ele]*count)
+print(*lst1)
