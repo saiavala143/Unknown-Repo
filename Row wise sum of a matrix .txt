@@ -1,0 +1,10 @@
+n,m=map(int,input().split())
+mat=[]
+for i in range(n):
+    k=list(map(int,input().split()))
+    mat.append(k)
+for i in range(n):
+    sum=0
+    for j in range(m):
+        sum=sum+mat[i][j]
+    print(sum,end=" ")    
