@@ -1,0 +1,13 @@
+n,m=map(int,input().split())
+mat=[]
+for i in range(n):
+    k=list(map(int,input().split()))
+    mat.append(k)
+sum=0
+lst=[]
+for j in range(m):
+    sum=0
+    for i in range(n):
+        sum=sum+mat[i][j]
+    lst.append(sum)
+print(max(lst))            
